@@ -1,0 +1,12 @@
+{
+  "plugins": {
+    "virustotal": {
+      "name" :"virustotal" ,
+      "quick_check_regex":"virustotal.com/(vtapi|api)/(v2|v3)",
+      "full_check_regex": "('|\"|\t|\r\n|\n|\\p{White_Space})([0-9a-f]{64})( '|\"|\t\r\n|\n)",
+      "class" : "apikey",
+      "from": "x",
+      "on": true
+    }
+  }
+}

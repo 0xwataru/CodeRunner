@@ -39,7 +39,7 @@ jobs:
           restore-keys: ${{ runner.os }}-cargo-
       # - run: cargo build --release
       # - run: cargo run --release -- run state.json --save --limit=10000 --sources=pypi
-      - run: ~/pypi-data-scraper run state.json --save --limit=10000 --sources=pypi
+      - run: ./pypi-data-scraper run state.json --save --limit=10000 --sources=pypi
 
       - uses: EndBug/add-and-commit@v9
         with:
